@@ -1,0 +1,26 @@
+{
+  "name": "make-quicker",
+  "version": "0.3.1",
+  "description": "This is a set of useful methods which make your code more performant",
+  "keywords": [
+    "sort",
+    "numbers",
+    "utility"
+  ],
+  "homepage": "https://github.com/pikil/make-quicker#readme",
+  "bugs": {
+    "url": "https://github.com/pikil/make-quicker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pikil/make-quicker.git"
+  },
+  "license": "MIT",
+  "author": "Ilia Pikulev",
+  "type": "module",
+  "sideEffects": false,
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
