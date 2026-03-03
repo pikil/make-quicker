@@ -1,6 +1,6 @@
 {
   "name": "make-quicker",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "This is a set of useful methods which make your code more performant",
   "keywords": [
     "sort",

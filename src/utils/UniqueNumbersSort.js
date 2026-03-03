@@ -1,16 +1,16 @@
 /**
- * Highly efficient sorting algorithm based on Radix and Bucket sorts
- * ADVANTAGES
- * * Super fast: 2x faster than radix sort, 5x faster than Array.prototype.sort()
- * * Can work with large volumes of numbers (radix and others might throw Max callstack errors)
+ * Highly efficient sorting algorithm based on Counting and Bucket sorts
+ * ADVANTAGES:
+ * - Super fast: 2x faster than radix sort, 5x faster than Array.prototype.sort()
+ * - Can work with large volumes of unique numbers (radix and others might throw Max callstack errors)
  * LIMITATIONS:
- * * works only for non-negative numbers
- * * doesn't work properly with decimals (only natural numbers)
- * * current implementation works only with unique numbers
+ * - works only for positive numbers
+ * - doesn't work properly with decimals (only natural numbers)
+ * - works only with unique numbers
  */
 export default class UniqueNumbersSort {
-  constructor (chunkSize = 256) {
-    this.chunkSize = chunkSize // Each chunk covers 'chunkSize' numbers
+  constructor () {
+    this.chunkSize = 256 // Each chunk covers 'chunkSize' numbers
 
     /**
      * @type {Array<Uint8Array?>}
@@ -19,7 +19,7 @@ export default class UniqueNumbersSort {
   }
 
   /**
-   * @param {Number} num
+   * @param {number} num
    */
   add (num) {
     const chunkIndex = num >>> 8 // num / 256

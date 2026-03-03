@@ -1,8 +1,8 @@
 import UniqueNumbersSort from './utils/UniqueNumbersSort'
 
 /**
- * Sorts natural positive numbers quicker than other methods
- * @param {Number[]} arr
+ * Sorts natural positive numbers very efficiently
+ * @param {number[]} arr
  */
 export const sortUniqueNumbers = (arr) => {
     const sorter = new UniqueNumbersSort()

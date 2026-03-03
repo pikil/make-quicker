@@ -9,12 +9,12 @@ $ npm i make-quicker
 
 # Usage
 ```js
-import { sortNumbers } from 'make-quicker'
+import { sortUniqueNumbers } from 'make-quicker'
 ```
 
 # Current list of available methods
 ```js
 import {
-    sortNumbers
+    sortUniqueNumbers
 } from 'make-quicker'
 ```
